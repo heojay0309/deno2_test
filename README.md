@@ -4,6 +4,7 @@ Deno 2 is out now! I wanted to give it a try and get familiar with it.
 
 - Deno is fully TypeScript safe.
 - Deno is a "all-in-one" run-time.
+- Deno supports many frameworks like Next, Remix, Vue, Astro, svelte, and more...
 
 ## Deno 2 Commands
 
@@ -51,10 +52,26 @@ Deno 2 is out now! I wanted to give it a try and get familiar with it.
 
 - "nvm / n / fnm" can be done by running "deno upgrade"
 
-### deno addd
+### deno add
 
 - "npm add" can be done by running "deno add"
 
 ### deno init
 
 - "npm init" can be done by running "deno init"
+
+### "deno --allow-env" or "deno -E"
+
+- Will enable access to environment variables to the imported npm packages
+
+### deno -A npm:create-next-app
+
+- Running "npx create-next-app" can be done by running "deno -A npm:create-next-app"
+
+### deno task
+
+- Running "deno task" will show you all the available tasks from package.json file.
+
+#### deno task dev
+
+- "npm run dev" = "deno task dev"
